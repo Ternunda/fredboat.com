@@ -1,13 +1,16 @@
 # (Very) Frequently Asked Questions
 
 ## How do I play music with the bot?
-Please read this fine manual. Specifically the part with the [music commands](https://fredboat.com/docs/index#music-commands).
+Please read this fine manual. Specifically the part with the music commands.
 
-## How do I add an entire playlist to the queue?
-Simply link a playlist with the following syntax:
+## My server isn't showing up when I try to add the bot via the link.
+First, make sure you log in with your Discord Credentials at discordapp.com. Also, if you are not the server owner, ensure you have the "Manage Server" permission. You can not add the bot without it.
+
+## How do I add an entire playlist or livestream to the queue?
+Simply link a playlist or livestream with the following syntax:
 
 ```
-;;play <url-to-playlist>
+;;play <url-to-playlist-or-livestream>
 ```
 
 ## How do I restrict music commands to a specific channel or role?
@@ -27,14 +30,11 @@ The bot is sometimes under very heavy load, particularly around weekends. You ca
 ## Why can't I hear the music bot, but other people can?
 This is a Discord bug. Occasionally you may need to restart your Discord client before you can hear users and bots speaking in voice chat.
 
+## The bot responds to my commands but I can't hear it!
+First, be sure you haven't accidentally muted or turned the bot down to 0. Right click on the bot in the voice channel to check. If that is not the problem simply change your voice region in the Server Settings (you can change it right back).
+
 ## The bot is saying I can't play a youtube video because it is blocked! How do I get around this?
 FredBoat is currently hosted in the US, which means that any videos that YouTube blocks in the US are unavailable. There's currently no way around this, but we may set up an internal proxy.
 
 ## How do I get the bot to stay in my channel?
-The bot will automatically leave a voice channel if it is left unused for too long. This is to improve performance of the bot, as leaving the bot idling in a few extra thousand voice channel takes a hit on the CPU. [Join the patreon campaign](https://fredboat.com/docs/donate) to gain access to the exclusive FredBoatPatron, which will stay in your channel.
-
-## Why isn't my server showing in the list when I try to add the bot?
-Log in with your discord credentials at [https://discordapp.com](https://discordapp.com)
-
-## The bot is responding, but I can't hear it play music?
-Make sure FredBoat is not muted for you by right clicking it in your voice channel. If it is not muted then try changing the voice region in Server Settings (you can change it right back). This will reset the voice connection to discord servers which may be wonky at times.
+The bot will automatically leave a voice channel if it is left unused for too long. This is to improve performance of the bot, as leaving the bot idling in a few extra thousand voice channel takes a hit on the CPU.
