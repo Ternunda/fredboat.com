@@ -1,8 +1,8 @@
 # Welcome to FredBoat Docs
-FredBoat is a free Discord music bot that delivers high-quality music to your Discord server. The music bot is made to be easy plug in to your Discord server with no configuration. 
+FredBoat is a free Discord music bot that delivers high-quality music to your Discord server. The music bot is made to easily plug in to your Discord server with no configuration. 
 
 ## Setting up the bot
-FredBoat is made to be super simple to use! Getting FredBoat running on your server is simple. You can invite the bot by authenticating it with your account using [this](https://goo.gl/cFs5M9) link. Bear in mind that you must have `Manage Server` permissions to be able to do this.
+FredBoat is made to be super simple to use! Getting FredBoat running on your server is easy. You can invite the bot by authenticating it with your account using [this](https://goo.gl/cFs5M9) link. Bear in mind that you must have `Manage Server` permissions to be able to do this.
 
 # Music Commands
 [(Requires the music bot)](https://goo.gl/cFs5M9).
@@ -12,7 +12,7 @@ FredBoat is made to be super simple to use! Getting FredBoat running on your ser
 | ;;play ***url***           | Plays music from the given URLs. See supported sources below.       | ;;play https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
 | ;;list                     | Displays a list of the current songs in the playlist.                 | ;;list                                      |
 | ;;nowplaying               | Displays the currently playing song.                                  | ;;nowplaying                                |
-| ;;skip                     | Skips the current song. Please use in moderation.                     | ;;skip                                      |
+| ;;skip                     | Removes the current song from the queue. Please use in moderation.                     | ;;skip                                      |
 | ;;stop                     | Stops the player and **clears** the playlist. Reserved for moderators.| ;;stop                                      |
 | ;;pause                    | Pauses the player.                                                    | ;;pause                                     |
 | ;;unpause                  | Unpauses the player.                                                  | ;;unpause                                   |
@@ -49,7 +49,7 @@ You can then choose your song with the `;;select <number>` command.
 
 **Supported sites:**
 
-* YouTube (streams hopefully coming soon)
+* YouTube 
 
 * SoundCloud
 
