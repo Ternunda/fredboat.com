@@ -1,12 +1,12 @@
 # Help support FredBoat♪♪
-We love bringing music right to your Discord Server through FredBoat♪♪. Ever since the launch of FredBoat♪♪, it has grown in popularity at an incredible rate. Improvements are constantly being made to the bot, but the largest challenge is providing enough server power. We have over 450k FredBoat♪♪ bots floating out there in the Discord ocean!
+We love bringing music right to your Discord Server through FredBoat♪♪. Ever since the launch of FredBoat♪♪, it has grown in popularity at an incredible rate. Improvements are constantly being made to the bot, but the largest challenge is providing enough server power. We have over 400k FredBoat♪♪ bots floating out there in the Discord ocean and, often, 2k+ deployed at any given time!
 
-It currently costs __over $400 a month__ in server rent for the sheer amount of power and data we need to keep FredBoat♪♪ going. However, this isn't even enough to keep quality from suffering during weekend peak times.
+It currently costs __over $200 a month__ in server rent for the sheer amount of power and data we need to keep FredBoat♪♪ going. However, this isn't even enough to keep quality from suffering during weekend peak times.
 
 You can support the development of FredBoat♪♪ while also enjoying some exclusive features we are unable to impliment in the free bot.
 
 ## Perks of donating
-As a patron of $2 or more per month you will gain access to FredBoat Patron in one server of your choosing which includes every feature you already enjoy in the free bot as well as:
+As a patron of $2 or more per month you will gain access to FredBoat Patron in one server of your choosing as well as:
 
 1. An isolated bot that is __not affected by peak usage__ (eg. less lag)
 2. The ability to __add Spotify playlists__ with tracks found on YouTube and Soundcloud
