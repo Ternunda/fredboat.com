@@ -9,15 +9,15 @@ FredBoat is made to be super simple to use! Getting FredBoat running on your ser
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;play ***url***           | Plays music from the given URLs. See supported sources below.       | ;;play https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
-| ;;list                     | Displays a list of the current songs in the playlist.                 | ;;list                                      |
-| ;;nowplaying               | Displays the currently playing song.                                  | ;;nowplaying                                |
-| ;;skip                     | Skips the current song. Please use in moderation.                     | ;;skip                                      |  
+| ;;play ***url***           | Plays music from the given URLs. See supported sources below.       | ;;p https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
+| ;;list                     | Displays a list of the current songs in the playlist.                 | ;;l                                      |
+| ;;nowplaying               | Displays the currently playing song.                                  | ;;np                                |
+| ;;skip                     | Skips the current song. Please use in moderation.                     | ;;s                                      |  
 | ;;voteskip                 | Vote to skip the current song. Must have 50% vote or more.            | ;;v                                          |
 | ;;stop                     | Stops the player and **clears** the playlist. Reserved for moderators.| ;;stop                                      |
 | ;;pause                    | Pauses the player.                                                    | ;;pause                                     |
 | ;;unpause                  | Unpauses the player.                                                  | ;;unpause                                   |
-| ;;join                     | Makes the bot join your current voice channel.                        | ;;join                                      |
+| ;;join                     | Makes the bot join your current voice channel.                        | ;;j                                      |
 | ;;leave                    | Makes the bot leave the current voice channel.                        | ;;leave                                     |
 | ;;repeat                   | Changes the repeat mode. Run this command for more info.              | ;;repeat all                                |
 | ;;shuffle                  | Toggles shuffle mode for the current queue.                           | ;;shuffle                                   |
