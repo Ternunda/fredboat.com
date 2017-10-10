@@ -12,7 +12,8 @@ FredBoat is made to be super simple to use! Getting FredBoat running on your ser
 | ;;play ***url***           | Plays music from the given URLs. See supported sources below.       | ;;play https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
 | ;;list                     | Displays a list of the current songs in the playlist.                 | ;;list                                      |
 | ;;nowplaying               | Displays the currently playing song.                                  | ;;nowplaying                                |
-| ;;skip                     | Skips the current song. Please use in moderation.                     | ;;skip                                      |
+| ;;skip                     | Skips the current song. Please use in moderation.                     | ;;skip                                      |  
+| ;;voteskip                 | Vote to skip the current song. Must have 50% vote or more.            | ;;v                                          |
 | ;;stop                     | Stops the player and **clears** the playlist. Reserved for moderators.| ;;stop                                      |
 | ;;pause                    | Pauses the player.                                                    | ;;pause                                     |
 | ;;unpause                  | Unpauses the player.                                                  | ;;unpause                                   |
@@ -76,7 +77,7 @@ Before you do anything, please [read our FAQ](https://fredboat.com/docs/faq).
 You can join either our [Discord server](https://discord.gg/cgPFW4q) or tweet us at [@DiscordFredBoat](https://twitter.com/DiscordFredBoat).
 
 ## Legal
-By using any of my hosted (but not selfhosted) bots you are subject to our (very minimal!) [terms of service](http://docs.fredboat.com/terms).
+By using any of my hosted (but not selfhosted) bots you are subject to our (very minimal!) [terms of service](https://fredboat.com/docs/terms).
 
 Effective as of 25-apr-2017.
 
