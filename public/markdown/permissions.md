@@ -5,8 +5,8 @@ FredBoat uses 4 different ranks each with different permissions.
 | Ranks                     | Permission Description                  |
 |------------------------------|-----------------------------------------------------------------------|
 | 3:Admin                     | Can change [FredBoat configuration](https://fredboat.com/docs/configuration) and edit permissions                  |
-| 2:DJ                      | Can skip, can pause/unpause, can change repeat mode, can change shuffle mode, etc. **By default, @everyone is set to this permission.**                  |
-| 1:User                      | Can add tracks to the queue and can only skip their own tracks. Remove @everyone from the DJ permission to assign them as a User.                  |
+| 2:DJ                      | Can skip, can pause/unpause, can change repeat mode, can change shuffle mode, etc. **By default, ``@everyone`` is set to this permission.**                  |
+| 1:User                      | Can add tracks to the queue and can only skip their own tracks. Remove ``@everyone`` from the DJ permission to assign them as a User.                  |
 | 0:Base                     | Given to everyone without higher ranks. Cannot modify the queue or player, but can still use commands like ;;list, ;;np, et cetera                  |
 
 ## Special notes
