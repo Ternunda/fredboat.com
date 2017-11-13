@@ -7,111 +7,93 @@ This is a tutorial for users who would like to host their own bot running Fredbo
 
 ### Requirements
 
-1. [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+1. [Java 8 JRE](https://www.java.com/en/)
 
 2. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 
-### Instructions
+3. A Google API key if you want ;;nowplaying and search to function
 
-Download `FredBoat.jar` from [this link](https://ci.fredboat.com/guestAuth/repository/downloadAll/FredBoat_Build/lastSuccessful?branch=refs/heads/master), then copy it to a folder of your choosing.
+4. Preferably an x86_64/AMD64 CPU. Strange things may happen if you try running FredBoat on an ARM CPU like on a Raspberry Pi. If you have no idea what this means, you're probably doing it right.
+
+### Download
+Pick one of these:
+* Download latest [stable build](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fstable&tab=artifacts&guest=1)
+
+* Download the latest ["I-like-living-on-the-edge build"](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fdev&tab=artifacts&guest=1) (unstable) 
+
+* Download the [source code](https://github.com/Frederikam/FredBoat/)
 
 Now [click here](https://fredboat.com/docs/selfhosting#setup) to set up the config and credentials
 
-## Installation from Source
+## Compile from Source
+
+__Not recommended unless you know what you are doing__
 
 ### Requirements
 
 1. [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-2. [Apache Maven](https://maven.apache.org/install.html)
+2. [Git](https://www.atlassian.com/git/tutorials/install-git)
 
-3. [Git](https://www.atlassian.com/git/tutorials/install-git)
+3. [JDK added to your PATH](https://www.tutorialspoint.com/maven/maven_environment_setup.htm)
 
-4. [JDK and Maven added to your PATH](https://www.tutorialspoint.com/maven/maven_environment_setup.htm)
+4. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 
-5. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+5. A Google API key if you want ;;nowplaying and search to function
+
+6. Preferably an x86_64/AMD64 CPU. Strange things may happen if you try running FredBoat on an ARM CPU like on a Raspberry Pi. If you have no idea what this means, you're probably doing it right.
+
 
 ### Instructions
 
 Open Terminal or Command Prompt and `cd` to the directory where you wish to download FredBoat to.
 
-Clone the `master` branch of FredBoat recursively:
+Clone the FredBoat GitHub repository and move into the newly created directory:
 
 ```sh
-git clone --recursive https://github.com/Frederikam/FredBoat.git
+git clone https://github.com/Frederikam/FredBoat.git
+cd FredBoat
+```
+
+If you want to run unstable/development builds, switch to the development branch:
+```sh
+git checkout development
+```
+
+You can change back anytime to the stable/master branch like this, just remember to compile again after switching:
+```sh
+git checkout master
 ```
 
 Now compile the bot:
 
 ```sh
-cd FredBoat
-mvn package shade:shade
+./gradlew build
+```
+or on Windows:
+```sh
+gradlew build
 ```
 
-## Setup
+
+# Setup
 
 To run the bot you should set up a directory that looks like this:
 
-![Directory](https://fred.moe/CsD.png)
+![Directory](https://fred.moe/9Eu.png)
 
-The compiled bot can be found in `FredBoat/FredBoat/target`. A sample `config.yaml` and an example `credentials.yaml` can be found in https://github.com/Frederikam/FredBoat/tree/master/FredBoat
+The compiled bot can be found in `FredBoat/FredBoat/build/libs`. A sample `config.yaml` and an example `credentials.yaml` can be found in https://github.com/Frederikam/FredBoat/tree/master/FredBoat or the TeamCity download links above.
 
 In order to run the bot, you must first populate your bot with API credentials for Discord in the `credentials.yaml` file.
 
-Music bot only: Fill in the Discord bot token for patron and at least one Youtube API key. Set patron to true in the `config.yaml` file and development to false. Fill in the Spotify tokens to use Spotify.
+Music bot only: Fill in the Discord bot token for patron and a Youtube API key. Set patron to true in the `config.yaml` file and development to false. Fill in the Spotify tokens under the `Optional APIs` to be able to load Spotify playlists.
 
-Full bot: Fill in the Discord bot token for beta and every other setting too. Set development to true in the `config.yaml` file and patron to false.
+Full bot: Fill in the Discord bot token for beta, a Youtube API key and every other Optional API key too. Set development to true in the `config.yaml` file and patron to false.
 
-Example credentials.yaml file:
-
-```yaml
----
-
-### *** WARNING ***
-### ALMOST EVERYTHING REQUESTED IN THIS FILE IS CONFIDENTIAL CREDENTIALS
-### IF YOU POST THIS FILE ONLINE (such as on GitHub) YOUR BOT COULD BE COMPROMISED
-
-# For the ;;mal command
-# Create an account on https://myanimelist.net/ and enter its login below
-malUser:
-malPassword:
-
-token: # Add your discord bot token below to the beta and patron slots, between the quotation marks
-  # Find the token of your bot on https://discordapp.com/developers/applications/me
-  # Optionally fill the other three tokens below in
-
-  beta: "YourTokenHere"
-  patron: "YourTokenHere"
-
-  production:
-  music:
-
-# Used by the ;;split and ;;np commands. Must be hooked up to the Youtube Data API.
-# Add your google API key in the brackets below between the quotation marks
-# How to get the key: https://developers.google.com/youtube/registering_an_application
-
-#googleServerKeys: [YourYoutubeAPIKey]
-googleServerKeys: ["YourYoutubeAPIKey"]
-
-
-# From https://cleverbot.io/
-cbUser:
-cbKey:
-
-
-# Used to access imgur galleries for some RandomImageCommands
-# Acquired from here: https://api.imgur.com/oauth2/addclient
-# Choose an option that does not require an Authorization callback URL
-imgurClientId:
-
-
-# Used to retrieve Spotify playlists
-# Get them from here: https://developer.spotify.com/my-applications
-spotifyId:
-spotifySecret:
+Once you are done configuring, run the bot with `java -jar -Xmx128m FredBoat.jar` from the commandline (double clicking won't work). Make sure you run that command from the directory `FredBoat.jar` is in. You can navigate to the directory like this:
+```sh
+cd /path/to/my/Download/folder/containing/FredBoat
 ```
-
-Once you are done configuring, run the bot with `java -jar -Xmx128m FredBoat-1.0.jar`.
 
 
 [Follow this link](http://docs.fredboat.com/systemdservice) to find a tutorial on running FredBoat as a `systemd` service.

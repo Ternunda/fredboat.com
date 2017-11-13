@@ -18,7 +18,7 @@ class Markdown extends Component {
     `;
     paypalButton = `
         <div class="md-button-wrapper">
-            <a class="md-button paypal-button" href="https://www.paypal.me/frederikam">
+            <a class="md-button paypal-button" href="https://www.paypal.me/frederikmikkelsen">
                 Donate via PayPal
             </a>
         </div>

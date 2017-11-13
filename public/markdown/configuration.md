@@ -1,8 +1,8 @@
 # Configuration
-FredBoat supports a few options when it comes to customizing it's behavior in your server. __You must be a server admin to change any of these settings.__
+FredBoat supports a few options when it comes to customizing its behavior in your server. __You must have admin permissions to change any of these settings.__
 
 ## The ;;lang command
-Want to use FredBoat in your native language? Server admins can set the language of FredBoat in their server. Say for instance I wanted to change the language to French:
+Want to use FredBoat in your native language? Server admins can set the language of FredBoat in their server. Say, for instance, I wanted to change the language to French:
 
 ```
 ;;lang fr_FR 
@@ -31,4 +31,5 @@ If you want to get the bot to unpause when someone joins the voice chat, you can
 ```
 
 ## Enabling/disabling automatic deletion of ;;play requests
-If FredBoat has permission to delete messages, it will automatically delete any valid ;;play requests in case the spam  gets too much. If you prefer to keep the messages, you can just disable this bot's delete messages permission. 
+If FredBoat has permission to 'Manage Messages' in the channel settings, it will automatically delete any valid ;;play requests.
+If you prefer to keep the messages, you can just disable this bot's 'Manage Messages' permission. 

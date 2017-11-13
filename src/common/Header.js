@@ -18,6 +18,8 @@ class Header extends Component {
                     <div className="logo-text">FredBoat</div>
                 </Link>
                 <div className="header-right">
+                    <a className="header-button" href="/docs#music-commands">Commands</a>
+                    <a className="header-button" href="/docs/faq">FAQ</a>
                     <a className="header-button" href="https://goo.gl/cFs5M9">Add to Discord</a>
                     <div className="icons">
                         <a className="discord" href="https://discord.gg/cgPFW4q">
